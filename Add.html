@@ -1,0 +1,54 @@
+<?php
+	include_once("config.php");
+
+	$result = mysqli_query($mysqli, "SELECT * FROM country");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"
+  href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friancertz Rave Cayanan</title>
+    <h1 class="center"> My CRUD Web Application</h1>
+</head>
+<body>
+
+	<form action="add.php" method="post" name="form1">		
+		<table widht="25%" border="0">
+			<tr>
+				<td>Iso</td>
+				<td><input type="text" name="iso"></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Nicename</td>
+                <td><input type="text" name="nicename"></td>
+            </tr>
+            <tr>
+                <td>Iso3</td>
+                <td><input type="text" name="iso3"></td>
+            </tr>
+            <tr>
+                <td>Numcode</td>
+                <td><input type="text" name="numcode"></td>
+            </tr>
+            <tr>
+                <td>Phonecode</td>
+                <td><input type="text" name="phonecode"></td>
+            </tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="Submit" value="Add"></td>
+			</tr>
+		</table>
+
+	</form>
+	
+</body>
+</html>

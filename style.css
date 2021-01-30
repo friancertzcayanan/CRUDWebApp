@@ -1,0 +1,13 @@
+body {
+    height:2000px;
+    background-color: rgba(0, 132, 255, 0.575);
+    background-image: linear-gradient(rgb(255, 255, 255) , rgb(0, 132, 255), white);
+    margin-right : 70px;
+    margin-left : 70px;
+    margin-top : 20px;
+} 
+h{
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(0, 132, 255);
+}
